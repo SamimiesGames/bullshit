@@ -1,5 +1,6 @@
 import sys
 import bs
+import platform
 import os
 
 
@@ -39,7 +40,11 @@ def execute(cmd):
             bs.compile_file(file, file + "-compiled")
             used_file = file+"-compiled.py"
         elif _id == "start":
-            os.startfile(used_file)
+            print(platform.system())
+            if platform.system() == "Windows":
+                os.startfile(used_file)
+            else:
+                os.system(f"python3 {used_file}")
         else:
             print(f"Failed to execute task \"{_id}\"")
             break
