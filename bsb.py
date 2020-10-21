@@ -40,7 +40,6 @@ def execute(cmd):
             bs.compile_file(file, file + "-compiled")
             used_file = file+"-compiled.py"
         elif _id == "start":
-            print(platform.system())
             if platform.system() == "Windows":
                 os.startfile(used_file)
             else:
