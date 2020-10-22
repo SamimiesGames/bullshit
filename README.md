@@ -1,2 +1,2 @@
 # bullshit
-Bullshit is a esoteric , interpreted highlevel language based on brainfuck.
+Bullshit is an esoteric , interpreted highlevel language based on brainfuck.
