@@ -41,7 +41,7 @@ def execute(cmd):
             used_file = file+"-compiled.py"
         elif _id == "start":
             if platform.system() == "Windows":
-                os.startfile(used_file)
+                os.system(f"python {used_file}")
             else:
                 os.system(f"python3 {used_file}")
         else:
